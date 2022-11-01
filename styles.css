@@ -25,3 +25,29 @@ body, a:link, a:visited, a:active{
   border-radius:10px;
   position:absolute;
 }
+
+.dancer {
+  animation-duration: 4s;
+  animation-name: none;
+}
+
+/*
+CHANGE from "none" to "lineUp" using jQuery
+$('.dancer').css('animation-name', 'lineUp')
+
+Do this for on.click for Line Up Button.
+*/
+
+
+@keyframes lineUp {
+  0% {
+    top: var(--currenttop); /* to set these to current
+    -> getPosition()[x], getPosition()[y] */
+    left: var(--currentleft);
+
+  }
+  100% {
+    top: var(--inputTop);
+    left: var(--inputLeft);
+  }
+}

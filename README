@@ -2,12 +2,17 @@ Methods to Implement:
   When you click a static dancer they turn into random movement dancers
 
 Line up-------
-  1. grab all dancers with dancer class
+  1. grab all dancers with dancer class (DOM jQ elements)
   2. put all dancer html elements into array (might be jQ object?)
-  3. split array in 2 (x: 10%, x: 90%)
+  3. split array in 2 (x: 10%, x: 90%) -- $arr1 , $arr2
   4. get available y range (10%-90%), divide this range by # of dancers. This becomes our increment value when traversing arrays(step3) and positioning each dancer
   5. Set position of each dancer in array1 (step3) and array2, with respective X values
   6. Do css animation when re-positioning each dancer
+
+Implementation (Line Up)
+  1. jQ select all elements with class "Dancer" (ALL Dancer)
+  2. Make a getPosition function in parent class makeDancer
+  3. Call each dancer's setPosition(x, y)
 
 Random Movement Dancer-----
   1. Make a new constructor class for randomly moving dancer
@@ -17,6 +22,9 @@ Random Movement Dancer-----
   2. Make a new button that creates a RandMoveDancer
   3. New CSS Class
     a. Will need to handle colors, animations, size & shape
+
+Implementation (RandMoveDancer)
+  1. jQ select,
 
 Circle Dancers----
   1. Make a new constructor class for a dancer with two shapes revolving around each other
