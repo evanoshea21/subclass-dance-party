@@ -36,6 +36,13 @@ CHANGE from "none" to "lineUp" using jQuery
 $('.dancer').css('animation-name', 'lineUp')
 
 Do this for on.click for Line Up Button.
+
+lineup () {
+  //go through all dancers, set new positions -> setPosition(top, left, animationName)
+  //update each $node to reflect animationName
+
+
+}
 */
 
 

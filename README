@@ -12,13 +12,17 @@ Line up-------
 Implementation (Line Up)
   1. jQ select all elements with class "Dancer" (ALL Dancer)
   2. Make a getPosition function in parent class makeDancer
-  3. Call each dancer's setPosition(x, y)
+  3. Call each dancer's getPosition(returns obj with x, y keys)
+  4. Set the x values of each dancer in an alternating pattern with two x variables
+    a. x1: 20% of width, x2: 80%
+  5. for the y values we want the first to be 10% down the page and last to be 90% down the page
+    a. We get the total y value and divide by the amount of dancers and that will be our incrementer for our for loop w
 
 Random Movement Dancer-----
   1. Make a new constructor class for randomly moving dancer
     a. Make a new random movement method that starts the random movement; ititiate itself inside constructor, call itself inside the setTimeoutCallback
     b. Make a method that handles movement and color change when hits edge of screen
-    c.
+    c. 
   2. Make a new button that creates a RandMoveDancer
   3. New CSS Class
     a. Will need to handle colors, animations, size & shape

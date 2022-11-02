@@ -26,29 +26,30 @@ $(document).ready(function() {
   });
 
   $('.addRandomDancerButton').on('click', function(event) {
-    var dancerMakerFunctionName = $(this).data('random-dancer-maker-function-name');
-
-    // get the maker function for the kind of dancer we're supposed to make
-    var dancerMakerFunction = window[dancerMakerFunctionName];
-    //debugger;
-    // make a dancer with a random position
-    var dancer = new dancerMakerFunction(
-      $("body").height() * Math.random(),
-      $("body").width() * Math.random(),
-      5000
-    );
-    window.dancers.push(dancer);
-    $('body').append(dancer.$node);
-  });
-
-  $('.addDancerButton').on('click', function(event) {
-
-//'dancer-maker-function-name'
+//debugger;
+var x = this;
     var dancerMakerFunctionName = $(this).data('dancer-maker-function-name');
 
     // get the maker function for the kind of dancer we're supposed to make
     var dancerMakerFunction = window[dancerMakerFunctionName];
-    debugger;
+    // make a dancer with a random position
+    var dancer = new dancerMakerFunction(
+      $("body").height() * Math.random(),
+      $("body").width() * Math.random(),
+      1000
+    );
+    window.dancers.push(dancer);
+    $('body').append(dancer.$node);
+    //debugger;
+  });
+
+  $('.addDancerButton').on('click', function(event) {
+debugger;
+    //'dancer-maker-function-name'
+    var dancerMakerFunctionName = $(this).data('dancer-maker-function-name');
+
+    // get the maker function for the kind of dancer we're supposed to make
+    var dancerMakerFunction = window[dancerMakerFunctionName];
     // make a dancer with a random position
     var dancer = new dancerMakerFunction(
       $("body").height() * Math.random(),
